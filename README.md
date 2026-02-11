@@ -106,8 +106,8 @@
 
 **Option 1 — Git Clone (recommended)**
 ```bash
-git clone https://github.com/Tcode-Motion/lusion-clone.git
-cd lusion-clone
+git clone https://github.com/Tcode-Motion/Lusion.co-Enhanced-Clone.git
+cd Lusion.co-Enhanced-Clone
 ```
 
 **Option 2 — Download ZIP**
@@ -118,8 +118,8 @@ cd lusion-clone
 
 **Option 3 — GitHub CLI**
 ```bash
-gh repo clone Tcode-Motion/lusion-clone
-cd lusion-clone
+gh repo clone Tcode-Motion/Lusion.co-Enhanced-Clone
+cd Lusion.co-Enhanced-Clone
 ```
 
 ### ▶️ Run Locally
@@ -175,7 +175,7 @@ Then open **http://localhost:8000** in your browser. 🎉
 
 ```powershell
 # If you have Python installed:
-cd "C:\path\to\lusion-clone"
+cd "C:\path\to\Lusion.co-Enhanced-Clone"
 py -m http.server 8000
 # Open http://localhost:8000 in Chrome
 ```
@@ -183,7 +183,7 @@ py -m http.server 8000
 ### 🐧 Linux / 🍎 macOS Quick Start
 
 ```bash
-cd ~/lusion-clone
+cd ~/Lusion.co-Enhanced-Clone
 python3 -m http.server 8000
 # Open http://localhost:8000
 ```
@@ -226,7 +226,7 @@ netlify deploy --prod --dir .
 2. Go to **Settings → Pages**
 3. Source: **Deploy from a branch**
 4. Branch: `main` / Root: `/ (root)`
-5. Save — your site will be live at `https://tcode-motion.github.io/lusion-clone/`
+5. Save — your site will be live at `https://tcode-motion.github.io/Lusion.co-Enhanced-Clone/`
 
 ### Cloudflare Pages
 
@@ -240,7 +240,7 @@ netlify deploy --prod --dir .
 ## 📁 Project Structure
 
 ```
-lusion-clone/
+Lusion.co-Enhanced-Clone/
 │
 ├── index.html                  # 🏠 Home page
 ├── about.html                  # 👥 About page
