@@ -1,0 +1,136 @@
+/* ============================================
+   CUSTOM ENHANCEMENTS — Lusion Clone by Tanmoy
+   Differentiating features from the original
+   ============================================ */
+
+/* ---- 1. Custom Cursor ---- */
+@media (hover: hover) {
+  * { cursor: none !important; }
+}
+#custom-cursor {
+  position: fixed;
+  top: 0; left: 0;
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.9);
+  pointer-events: none;
+  z-index: 99999;
+  mix-blend-mode: difference;
+  transition: transform 0.15s ease-out, width 0.2s, height 0.2s;
+  transform: translate(-50%, -50%);
+}
+#custom-cursor-ring {
+  position: fixed;
+  top: 0; left: 0;
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255,255,255,0.4);
+  pointer-events: none;
+  z-index: 99998;
+  mix-blend-mode: difference;
+  transition: transform 0.08s linear, width 0.25s, height 0.25s, border-color 0.3s;
+  transform: translate(-50%, -50%);
+}
+#custom-cursor.--hover {
+  width: 50px; height: 50px;
+  background: rgba(120, 80, 255, 0.25);
+  border: 1.5px solid rgba(120, 80, 255, 0.7);
+}
+#custom-cursor-ring.--hover {
+  width: 60px; height: 60px;
+  border-color: rgba(120, 80, 255, 0.5);
+}
+
+/* ---- 2. Accent Color Overrides (Deep Purple/Violet) ---- */
+:root {
+  --accent: #7c3aed;
+  --accent-light: #a78bfa;
+  --accent-glow: rgba(124, 58, 237, 0.35);
+}
+
+#scroll-indicator-bar {
+  background: var(--accent) !important;
+  box-shadow: 0 0 8px var(--accent-glow);
+}
+
+.header-menu-link:hover .header-menu-link-background {
+  background: var(--accent) !important;
+  opacity: 0.12 !important;
+}
+
+.header-menu-link.--active::before {
+  background: var(--accent) !important;
+}
+
+#home-reel-cta-dot,
+#home-featured-cta-dot {
+  background: var(--accent) !important;
+}
+
+/* ---- 3. Enhanced "Let's Talk" Button ---- */
+#header-right-talk-btn {
+  background: var(--accent) !important;
+  color: #fff !important;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s !important;
+}
+@media (hover: hover) {
+  #header-right-talk-btn:hover {
+    background: var(--accent-light) !important;
+    transform: scale(1.06) !important;
+    box-shadow: 0 0 20px var(--accent-glow) !important;
+  }
+}
+
+/* ---- 4. Glow on Project Cards ---- */
+.project-item {
+  transition: transform 0.4s cubic-bezier(.4,0,.1,1), box-shadow 0.4s !important;
+}
+@media (hover: hover) {
+  .project-item:hover {
+    transform: translateY(-6px) !important;
+    box-shadow: 0 12px 40px rgba(124, 58, 237, 0.18) !important;
+  }
+}
+
+/* ---- 5. Footer Branding ---- */
+#footer-bottom-tagline {
+  color: var(--accent-light) !important;
+}
+
+/* ---- 6. Smooth Page Entrance ---- */
+@keyframes pageSlideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+#page-container-inner {
+  animation: pageSlideUp 0.9s 0.3s ease-out both;
+}
+
+/* ---- 7. Selection Color ---- */
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* ---- 8. Newsletter Input Focus Glow ---- */
+#header-menu-newsletter-input-field:focus,
+#footer-newsletter-input-field:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 2px var(--accent), 0 0 15px var(--accent-glow) !important;
+}
+
+/* ---- 9. Scroll-to-Top Button Glow ---- */
+#footer-bottom-up {
+  transition: transform 0.3s, box-shadow 0.3s !important;
+}
+@media (hover: hover) {
+  #footer-bottom-up:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 4px 15px var(--accent-glow) !important;
+  }
+}
+
+/* ---- 10. Preloader Accent ---- */
+#preloader-percent-digits {
+  color: var(--accent-light) !important;
+}
